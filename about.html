@@ -1,151 +1,121 @@
 
-<!-- FONT -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Report a Problem | Citizen Reporting Website</title>
 
-<!-- ABOUT CONTENT -->
-<div class="container py-5" style="font-family: 'Inter', sans-serif; background-color: #f8fbff;">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <h1 class="text-center fw-bold mb-2" style="font-size: 36px; color: #163b5c;">
-        About
-    </h1>
+<body>
 
-    <p class="text-center mb-5" style="color: #718096; font-size: 15px;">
-        Learn more about our citizen reporting platform.
-    </p>
+    <!-- Navigation Bar -->
+    <header class="navbar navbar-expand-md navbar-dark sticky-top site-header">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-5" href="index.html">
+                Citizen Reporting Website
+            </a>
 
-    <div class="row g-4">
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- FAQ BOX -->
-        <div class="col-lg-6">
-            <section class="h-100 p-4 p-md-5"
-                style="background: white; border: 1px solid #d9eaf7; border-top: 5px solid #35b6f5; border-radius: 18px; box-shadow: 0 8px 25px rgba(30, 80, 120, 0.08);">
-
-                <div class="mb-4">
-                    <h2 class="fw-bold mb-1" style="font-size: 23px; color: #163b5c;">
-                        Frequently Asked Questions
-                    </h2>
-                    <p style="font-size: 13px; color: #8494a5;">
-                        Find answers to common questions.
-                    </p>
+            <nav class="collapse navbar-collapse" id="menu">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link active" href="report.html">Report</a>
+                    <a class="nav-link" href="track.html">Track</a>
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="login.html">Login</a>
                 </div>
-
-                <details class="mb-3 p-3" style="background: #f4f9fd; border-radius: 10px;">
-                    <summary class="fw-semibold" style="color: #244b68; cursor: pointer;">
-                        What can I report?
-                    </summary>
-                    <p class="mt-2 mb-0" style="color: #64748b; font-size: 14px; line-height: 1.7;">
-                        Community problems such as damaged roads, uncollected garbage, broken street lights, flooding, noise, and safety hazards.
-                    </p>
-                </details>
-
-                <details class="mb-3 p-3" style="background: #f4f9fd; border-radius: 10px;">
-                    <summary class="fw-semibold" style="color: #244b68; cursor: pointer;">
-                        Do I need an account?
-                    </summary>
-                    <p class="mt-2 mb-0" style="color: #64748b; font-size: 14px; line-height: 1.7;">
-                        Yes. Creating an account lets us contact you about your report.
-                    </p>
-                </details>
-
-                <details class="mb-3 p-3" style="background: #f4f9fd; border-radius: 10px;">
-                    <summary class="fw-semibold" style="color: #244b68; cursor: pointer;">
-                        What should I include?
-                    </summary>
-                    <p class="mt-2 mb-0" style="color: #64748b; font-size: 14px; line-height: 1.7;">
-                        A clear subject, exact location, description, and a photo or video if possible.
-                    </p>
-                </details>
-
-                <details class="mb-3 p-3" style="background: #f4f9fd; border-radius: 10px;">
-                    <summary class="fw-semibold" style="color: #244b68; cursor: pointer;">
-                        How do I track my report?
-                    </summary>
-                    <p class="mt-2 mb-0" style="color: #64748b; font-size: 14px; line-height: 1.7;">
-                        Enter your reference number on the Track page to see its details and progress.
-                    </p>
-                </details>
-
-                <details class="mb-3 p-3" style="background: #f4f9fd; border-radius: 10px;">
-                    <summary class="fw-semibold" style="color: #244b68; cursor: pointer;">
-                        What do the statuses mean?
-                    </summary>
-                    <p class="mt-2 mb-0" style="color: #64748b; font-size: 14px; line-height: 1.7;">
-                        Submitted, Received, Under Review, Assigned, In Progress, and Resolved.
-                    </p>
-                </details>
-
-                <details class="p-3" style="background: #f4f9fd; border-radius: 10px;">
-                    <summary class="fw-semibold" style="color: #244b68; cursor: pointer;">
-                        Is this a real service?
-                    </summary>
-                    <p class="mt-2 mb-0" style="color: #64748b; font-size: 14px; line-height: 1.7;">
-                        No. This is a class prototype. Reports and sample statuses are demonstration data.
-                    </p>
-                </details>
-
-            </section>
+            </nav>
         </div>
+    </header>
 
-        <!-- PRIVACY POLICY BOX -->
-        <div class="col-lg-6">
-            <section class="h-100 p-4 p-md-5"
-                style="background: white; border: 1px solid #d9eaf7; border-top: 5px solid #35b6f5; border-radius: 18px; box-shadow: 0 8px 25px rgba(30, 80, 120, 0.08);">
+    <!-- Main Content -->
+    <main>
+        <div class="container py-4">
 
-                <div class="mb-4">
-                    <h2 class="fw-bold mb-1" style="font-size: 23px; color: #163b5c;">
-                        Privacy Policy
-                    </h2>
-                    <p style="font-size: 13px; color: #8494a5;">
-                        Your privacy and information matter to us.
-                    </p>
+            <h1 class="fw-bold text-center mb-4">
+                Report a Problem
+            </h1>
+
+            <div class="row g-4">
+
+                <!-- FAQ Section -->
+                <div class="col-lg-6">
+                    <section class="box h-100">
+                        <h2 class="h4 mb-3">FAQ</h2>
+
+                        <details class="faq" open>
+                            <summary>What can I report?</summary>
+                            <p>Community problems such as damaged roads, uncollected garbage, broken street lights, flooding, noise, and safety hazards.</p>
+                        </details>
+
+                        <details class="faq">
+                            <summary>Do I need an account?</summary>
+                            <p>Yes. Creating an account lets us contact you about your report.</p>
+                        </details>
+
+                        <details class="faq">
+                            <summary>What should I include?</summary>
+                            <p>A clear subject, the exact location, a description, and a photo or video if possible.</p>
+                        </details>
+
+                        <details class="faq">
+                            <summary>How do I track my report?</summary>
+                            <p>Enter your reference number on the Track page to see its details and progress.</p>
+                        </details>
+
+                        <details class="faq">
+                            <summary>What do the statuses mean?</summary>
+                            <p>Submitted, Received, Under Review, Assigned, In Progress, and Resolved.</p>
+                        </details>
+
+                        <details class="faq">
+                            <summary>Is this a real service?</summary>
+                            <p>No. This is a class prototype. Reports and sample statuses are demonstration data.</p>
+                        </details>
+                    </section>
                 </div>
 
-                <div class="p-3 mb-3" style="background: #f4f9fd; border-radius: 10px;">
-                    <h3 class="fw-semibold" style="font-size: 16px; color: #244b68;">
-                        Information We Collect
-                    </h3>
-                    <p class="mb-0" style="font-size: 14px; color: #64748b; line-height: 1.7;">
-                        We collect your email, contact number, and the details of your report.
-                    </p>
+                <!-- Privacy Policy Section -->
+                <div class="col-lg-6">
+                    <section class="box h-100">
+                        <h2 class="h4 mb-3">Privacy Policy</h2>
+
+                        <ul class="privacy">
+                            <li>We collect your email, contact number, and the details of your report.</li>
+                            <li>Your information is used only to process and update your report.</li>
+                            <li>We do not sell or share your personal information.</li>
+                            <li>Photos and videos should show the problem, not private people or documents.</li>
+                            <li>Your password is never shown to anyone.</li>
+                            <li>In this demo, reports stay in your own browser and are not sent anywhere.</li>
+                        </ul>
+                    </section>
                 </div>
 
-                <div class="p-3 mb-3" style="background: #f4f9fd; border-radius: 10px;">
-                    <h3 class="fw-semibold" style="font-size: 16px; color: #244b68;">
-                        Use of Information
-                    </h3>
-                    <p class="mb-0" style="font-size: 14px; color: #64748b; line-height: 1.7;">
-                        Your information is used only to process and update your report.
-                    </p>
-                </div>
-
-                <div class="p-3 mb-3" style="background: #f4f9fd; border-radius: 10px;">
-                    <h3 class="fw-semibold" style="font-size: 16px; color: #244b68;">
-                        Data Protection
-                    </h3>
-                    <p class="mb-0" style="font-size: 14px; color: #64748b; line-height: 1.7;">
-                        We do not sell or share your personal information. Your password is never shown to anyone.
-                    </p>
-                </div>
-
-                <div class="p-3 mb-3" style="background: #f4f9fd; border-radius: 10px;">
-                    <h3 class="fw-semibold" style="font-size: 16px; color: #244b68;">
-                        Uploaded Files
-                    </h3>
-                    <p class="mb-0" style="font-size: 14px; color: #64748b; line-height: 1.7;">
-                        Photos and videos should show the problem, not private people or documents.
-                    </p>
-                </div>
-
-                <div class="p-3" style="background: #eaf6ff; border-left: 4px solid #35b6f5; border-radius: 8px;">
-                    <p class="mb-0" style="font-size: 13px; color: #42647e; line-height: 1.7;">
-                        <strong>Demo Notice:</strong> In this class prototype, reports stay in your own browser and are not sent anywhere.
-                    </p>
-                </div>
-
-            </section>
+            </div>
         </div>
+    </main>
 
-    </div>
-</div>
+    <!-- Footer -->
+    <footer class="site-footer py-3">
+        <div class="container d-flex flex-column flex-sm-row gap-1 gap-sm-4">
+            <strong>Contacts:</strong>
+            <span>help@citizenreport.example</span>
+            <span>(02) 8000 0000</span>
+            <span>Manila, Philippines</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

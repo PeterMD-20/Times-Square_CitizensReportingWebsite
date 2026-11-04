@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "msedge",
             "request": "launch",
-            "name": "Open track.html",
-            "file": "c:\\Users\\12512901\\OneDrive\\Times-Square_CitizensReportingWebsite\\track.html"
+            "name": "Open index.html",
+            "file": "c:\\Users\\12512901\\OneDrive\\Times-Square_CitizensReportingWebsite\\index.html"
         }
     ]
 }

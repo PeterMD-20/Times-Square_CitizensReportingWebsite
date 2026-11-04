@@ -1,0 +1,13 @@
+/*For Index page Only*/
+
+.website-Title {
+    text-align: center;
+    font-size: 100px;
+    font-family: var(--display-font);
+}
+
+#section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}

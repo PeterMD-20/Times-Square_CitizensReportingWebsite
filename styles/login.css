@@ -1,5 +1,27 @@
 /*Strictly for login and registration only*/
+:root{
+    --display-font: "Quantico", sans-serif;
+}
 
 .login-registration-title {
     font-size: 40px;
+    font-family: var(--display-font);
+}
+
+.login-registration-box {
+    border: 10px solid;
+    margin: 20px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: rgb(69, 161, 242);
+}
+
+#prompt {
+    font-size: 50px;
+    font-family: var(--display-font);
+}
+
+input {
+    min-height: 50px;
+    padding-bottom: 10px;
 }

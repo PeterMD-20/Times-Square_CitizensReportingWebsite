@@ -1,0 +1,13 @@
+.site-footer {
+  border-top: 1px solid rgb(69, 161, 242);
+  background: #f7f7f2;
+  color: #59635e;
+  font-size: 0.85rem;
+  max-height: 10px;
+}
+
+.footer-copyright {
+  color: var(--ink);
+  font-weight: 600;
+}
+

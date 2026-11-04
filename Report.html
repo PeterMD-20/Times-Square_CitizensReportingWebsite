@@ -7,26 +7,27 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header class="navbar navbar-expand-md navbar-dark sticky-top site-header">
-    <div class="container">
-      <a class="navbar-brand fw-bold fs-5" href="index.html">Citizen Reporting Website</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <nav class="collapse navbar-collapse" id="menu" aria-label="Main navigation">
-        <div class="navbar-nav ms-auto">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link active" aria-current="page" href="report.html">Report</a>
-          <a class="nav-link" href="track.html">Track</a>
-          <a class="nav-link" href="about.html">About</a>
-          <a class="nav-link" href="login.html">Login</a>
-        </div>
-      </nav>
+<body class="d-flex flex-column min-vh-100">
+  <header class="navbar navbar-expand-md sticky-top bg-light px-3 px-lg-5">
+    <div class="container-fluid">
+        <a class="btn" id="logo" href="index.html">CRW</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-navigation" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation">
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+
+        <nav class="collapse navbar-collapse justify-content-md-end" id="site-navigation" aria-label="Main navigation">
+            <div class="navbar-nav align-items-md-center gap-md-5">
+                <a class="btn" href="index.html" aria-current="page">Home</a>
+                <a class="btn" href="about.html">About</a>
+                <a class="btn" href="track.html">Track Report Status</a>
+                <a class="btn btn-outline-dark ms-md-2" href="Report.html">Report</a>
+            </div>
+        </nav>
     </div>
   </header>
 
-  <main>
+  <main class="flex-grow-1">
     <div class="container py-4">
       <h1 class="h2 fw-bold mb-3">Reporting</h1>
       <div class="row g-4">
@@ -89,13 +90,11 @@
     </div>
   </main>
 
-  <footer class="site-footer py-3">
-    <div class="container d-flex flex-column flex-sm-row gap-1 gap-sm-4">
-      <strong>Contacts:</strong>
-      <span>help@citizenreport.example</span>
-      <span>(02) 8000 0000</span>
-      <span>Manila, Philippines</span>
-    </div>
+  <footer class="site-footer py-4">
+      <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2">
+          <p class="footer-copyright mb-0">&copy; 2026 Citizen Reporting Website</p>
+          <p class="footer-notice mb-0">This is intended for Web Development (WEBDEVT) demo purposes only.</p>
+      </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

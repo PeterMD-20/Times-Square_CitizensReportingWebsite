@@ -17,11 +17,11 @@
 }
 
 #prompt {
-    font-size: 50px;
+    font-size: 20px;
     font-family: var(--display-font);
 }
 
 input {
-    min-height: 50px;
+    min-height: 10px;
     padding-bottom: 10px;
 }

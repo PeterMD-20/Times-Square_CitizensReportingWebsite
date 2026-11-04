@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "msedge",
+            "type": "editor-browser",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\12512901\\OneDrive\\Times-Square_CitizensReportingWebsite\\index.html"
+            "url": "C:\\Users\\USER\\Documents\\VSCode Projects\\WEBDEVT Final Project\\index.html"
         }
     ]
 }

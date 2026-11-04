@@ -1,13 +1,17 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="stylesheet" href="styles/login.css">
         <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/navbar.css">
     </head>
 
     <body>
         <header class="navbar navbar-expand-md sticky-top bg-light px-3 px-lg-5">
             <div class="container-fluid">
+                <a class="btn" id="logo" href="index.html">CRW</a>
+
                 <nav class="collapse navbar-collapse justify-content-md-end" id="site-navigation" aria-label="Main navigation">
                     <div class="navbar-nav align-items-md-center gap-md-5">
                         <a class="btn" href="index.html" aria-current="page">Home</a>
@@ -22,27 +26,35 @@
         <main>
             
             <h1 class="website-Title">Citizen Reporting Website</h1>
-                <p>Name still pending...</p>
 
-
-            <section class="login-box"><!--Login-->
+            <section id="section">
+                <article class="login-registration-box" id="loginSection"><!--Login-->
                 <h1 class="login-registration-title">Login</h1>
 
-                Email: <input type="email" name="email">
+                <a id="prompt">Email:</a> <input type="email" name="email">
                 <br/>
 
-                Password: <input type="password" name="password">
-            </section>
-            <section class="registration-box"><!--Registration-->
-                <h1 class="login-registration-title">Registration</h1>
+                <a id="prompt">Password:</a> <input type="password" name="password">
+                </article>
 
-                Email: <input type="email" name="email">
-                <br/>
-                Contact Number <i>Optional</i>: <input type="tel" name="contactNumber">
-                <br/>
-                Password: <input type="password" name="password">
-                <br/>
-                Confirm Password: <input type="password">
+                <article class="login-registration-box" id="registrationSection"><!--Registration-->
+                    <h1 class="login-registration-title">Registration</h1>
+
+                    <a id="prompt">Email:</a>
+                    <input type="email" name="email">
+                    <br/>
+
+                    <a id="prompt">Contact Number <i>Optional</i>: </a>
+                    <input type="tel" name="contactNumber">
+                    <br/>
+
+                    <a id="prompt">Password: </a>
+                    <input type="password" name="password">
+                    <br/>
+
+                    <a id="prompt">Confirm Password: </a>
+                    <input type="password">
+                </article>
             </section>
         </main>
     </body>

@@ -11,12 +11,13 @@
     font-family: var(--display-font);
 }
 
-#nav-btn {
+#site-navigation .btn {
     background-color: white;
     padding: 3px;
     border-radius: 10px;
     color: rgb(69, 161, 242);
     text-decoration: none;
+    font-weight: bolder;
 }
 
 #logo {    

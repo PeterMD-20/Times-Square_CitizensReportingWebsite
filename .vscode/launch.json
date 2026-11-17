@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "editor-browser",
+            "type": "vscode-edge-devtools.debug",
             "request": "launch",
             "name": "Open index.html",
             "url": "C:\\Users\\USER\\Documents\\VSCode Projects\\WEBDEVT Final Project\\index.html"

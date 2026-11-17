@@ -26,3 +26,16 @@ input {
     min-height: 10px;
     padding-bottom: 10px;
 }
+
+#section .btn{
+    color: white;
+    background-color: rgb(69, 161, 242);
+    margin-top: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+#section .prompt{
+    font-weight: bold;
+    font-size: 20px;
+}

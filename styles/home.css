@@ -1,45 +1,31 @@
 /*For Index page Only*/
 
-body {
-    background-image: url(../assets/hero-image2.jpg);
+body{
+    background-color: white;
+}
+
+#cTA-Section {
+    background-image: url(../assets/SM1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.website-Title {
-    text-align: center;
-    font-size: 50px;
-    font-family: var(--display-font);
-    margin-top: 20px;
-    font-weight: 700;
-    color: white;
-    /* text-shadow:
-        -1px -1px 0 white,
-         1px -1px 0 white,
-        -1px  1px 0 white,
-         1px  1px 0 white; */
-}
-
-#section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
+    background-attachment: fixed;
 }
 
 #call-to-action {
     font-size: 50px;
     text-align: left;
-    margin-left: 200px;
-    margin-top: 120px;
-    margin-bottom: 80px;
+    padding-left: 200px;
+    padding-top: 120px;
+    padding-bottom: 80px;
     color: white;
+    padding-bottom: 350px;
 }
 
 #hero-label {
     text-decoration: underline;
     color: white;
-    font-weight: 700;
+    font-size: 20px;
 }
 
 #hero-report {
@@ -54,4 +40,38 @@ body {
 #one-call{
     font-size: 50px;
     font-weight: bold;
+    padding-bottom: -100px;
+}
+
+#links-Section{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px
+}
+
+#links-Row{
+    margin: 10px;
+}
+
+a:link{
+    color: white;
+    background-color: transparent;
+}
+a:visited {
+  color: white;
+    background-color: transparent;
+}
+a:hover {
+  color: white;
+    background-color: transparent;
+}
+a:active {
+  color: white;
+    background-color: transparent;
+}
+
+.col-Title{
+    font-weight: bold;
+    font-size: 40px;
 }

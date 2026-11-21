@@ -4,17 +4,31 @@
 }
 
 #Login-Registration-Section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    padding-top: 400px;
-    padding-bottom: 150px;
+    padding-bottom: 10px;
+    padding-top: 15px;
 
     background-image: url(../assets/SM2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+@media (min-width: 768px) {
+    #Login-Registration-Section {
+        padding-bottom: 100px;
+        padding-top: 150px;
+    }
+}
+
+#signup-Row {
+    padding-top: 15px;
+}
+
+@media (min-width: 768px) {
+    #signup-Row {
+        padding-top: 150px;
+    }
 }
 
 .login-registration-title {
@@ -36,20 +50,34 @@
     font-family: var(--display-font);
 }
 
-input {
+#Login-Registration-Section input {
     min-height: 10px;
     padding-bottom: 10px;
 }
 
-#Login-Registration-Section .btn{
+#Login-Registration-Section .btn {
     color: white;
     background-color: red;
     border: 0;
     margin-top: 15px;
     font-size: 15px;
     border-radius: 10px;
+    font-weight: bold;
 }
 
-#Login-Registration-Section .prompt{
-    font-size: 20px;
+#Login-Registration-Section .text-Box {
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+    border: transparent;
+    margin-bottom: 4px;
+    padding: 2px;
+    font-size: 18px;
+    width: 80%;
+}
+
+.signup-Message {
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
 }

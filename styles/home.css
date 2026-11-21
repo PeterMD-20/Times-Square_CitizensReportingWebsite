@@ -15,26 +15,33 @@ body{
 #call-to-action {
     font-size: 50px;
     text-align: left;
-    padding-left: 200px;
     padding-top: 120px;
-    padding-bottom: 80px;
     color: white;
-    padding-bottom: 350px;
+    padding-left: 40px;
+    padding-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+    #call-to-action {
+        padding-left: 200px;
+        padding-bottom: 350px;
+    }
 }
 
 #hero-label {
     text-decoration: underline;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
-#hero-report {
+#hero-button {
     color: white;
-    background-color: rgb(69, 161, 242);
+    background-color: red;
     margin-top: 15px;
     font-size: 30px;
     border-radius: 15px;
     font-weight: bold;
+    border: transparent;
 }
 
 #one-call{

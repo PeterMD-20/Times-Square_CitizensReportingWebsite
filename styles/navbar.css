@@ -1,6 +1,6 @@
 .navbar {
   min-height: 10px;
-  background-color: rgb(69, 161, 242);
+  /* background-color: rgb(69, 161, 242); */
   border: none;
 }
 
@@ -14,14 +14,20 @@
     background-color: white;
     padding: 3px;
     border-radius: 10px;
-    color: rgb(69, 161, 242);
+    color: black;
     text-decoration: none;
     font-weight: bolder;
 }
 
-#logo {    
-    text-align: center;
-    font-size: 30px;
-    font-family: var(--display-font);
+#logo {
+    width: 40px;
+    height: 40px;
     margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+    #logo {
+        width: 60px;
+        height: 60px;
+    }
 }
